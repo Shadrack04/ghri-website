@@ -52,13 +52,22 @@ export default function Navigation() {
             <ul className="grid w-[200px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Components</Link>
+                  <Link href="#">General Emergency</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Documentation</Link>
+                  <Link href="#">Cholera</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Blocks</Link>
+                  <Link href="#">Covid 19</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="#">Ebola</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="#">Chicken Pox</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="#">Mpox</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -83,13 +92,10 @@ export default function Navigation() {
             <ul className="grid w-[200px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Components</Link>
+                  <Link href="#">Blog</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Documentation</Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Blocks</Link>
+                  <Link href="#">Podcast</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
