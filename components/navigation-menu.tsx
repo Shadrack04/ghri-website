@@ -17,10 +17,15 @@ import { paths } from "@/constants/paths";
 export default function Navigation() {
   return (
     <NavigationMenu viewport={false}>
-      <NavigationMenuList>
+      <NavigationMenuList className="text-muted-foreground">
         <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href={paths.public.home}>Home</Link>
+          <NavigationMenuLink
+            asChild
+            className={(navigationMenuTriggerStyle(), "")}
+          >
+            <Link href={paths.public.home} className=" ">
+              Home
+            </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
