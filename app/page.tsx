@@ -1,5 +1,6 @@
+import { paths } from "@/constants/paths";
 import { redirect } from "next/navigation";
 
 export default function Home() {
-  redirect("landing");
+  redirect(paths.public.home);
 }
