@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import { icons } from "@/constants/icons";
 
 import InitiativeCard from "./initiative-card";

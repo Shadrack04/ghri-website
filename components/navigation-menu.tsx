@@ -23,7 +23,7 @@ export default function Navigation() {
     pathName === href || pathName.startsWith(`${href}/`);
   return (
     <NavigationMenu viewport={false}>
-      <NavigationMenuList className="text-muted-foreground">
+      <NavigationMenuList className="text-foreground/50">
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild

@@ -1,4 +1,3 @@
-import { icons } from "@/constants/icons";
 import { images } from "@/constants/image";
 import { ArrowDownRight } from "lucide-react";
 import Image from "next/image";
