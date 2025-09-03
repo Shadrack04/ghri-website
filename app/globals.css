@@ -124,6 +124,8 @@
 .background {
   background-image: url(../assets/images/pattern.svg);
   background-size: cover;
-  position: sticky;
+
+  background-attachment: fixed;
+
   inset: 0;
 }
