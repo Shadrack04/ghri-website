@@ -16,6 +16,11 @@ import youtubeIon from "@/assets/svg/youtube.svg";
 import micIcon from "@/assets/svg/mic-icon.svg";
 import gooleIcon from "@/assets/svg/google-icon.svg";
 import dartIcon from "@/assets/svg/dart-icon.svg";
+import sponsorIcon1 from "@/assets/svg/sponsor-icon1.svg";
+import sponsorIcon2 from "@/assets/svg/sponsor-icon2.svg";
+import sponsorIcon3 from "@/assets/svg/sponsor-icon3.svg";
+import sponsorIcon4 from "@/assets/svg/sponsor-icon4.svg";
+import sponsorIcon5 from "@/assets/svg/sponsor-icon5.svg";
 
 export const icons = {
   Logo,
@@ -36,4 +41,9 @@ export const icons = {
   micIcon,
   gooleIcon,
   dartIcon,
+  sponsorIcon1,
+  sponsorIcon2,
+  sponsorIcon3,
+  sponsorIcon4,
+  sponsorIcon5,
 };
