@@ -10,6 +10,7 @@ import volunter from "@/assets/images/volunter.webp";
 import slantImage from "@/assets/images/slant-image.webp";
 import aboutHeaderImage from "@/assets/images/about-header-image.webp";
 import ourStoryImage from "@/assets/images/our-story-image.webp";
+import staffImage from "@/assets/images/staff-image.webp";
 
 export const images = {
   heroBg,
@@ -24,4 +25,5 @@ export const images = {
   slantImage,
   aboutHeaderImage,
   ourStoryImage,
+  staffImage,
 };

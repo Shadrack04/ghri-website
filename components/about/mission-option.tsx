@@ -4,7 +4,7 @@ import React from "react";
 
 export default function MissionOption() {
   return (
-    <div className=" relative top-0 w-90 left-4 flex items-center justify-center gap-6">
+    <div className=" relative my-30 top-0 w-90 left-4 flex items-center justify-center gap-6">
       <div className=" bg-primary p-2 flex items-center justify-center rounded-full">
         <Image
           src={icons.dartIcon}

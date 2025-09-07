@@ -121,6 +121,10 @@
   }
 }
 
+.custom-padding {
+  @apply px-18;
+}
+
 .background {
   background-image: url(../assets/images/pattern.svg);
   background-size: cover;
