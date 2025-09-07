@@ -5,7 +5,7 @@ import React from "react";
 export default function StaffCircleCard() {
   return (
     <div className=" flex flex-col gap-4">
-      <div className=" flex items-center justify-center p-10">
+      <div className=" flex items-center justify-center px-10 pt-10">
         <Image
           src={images.staffImage}
           alt=""
