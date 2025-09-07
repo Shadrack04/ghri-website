@@ -2,8 +2,6 @@ import { icons } from "@/constants/icons";
 import { images } from "@/constants/image";
 import Image from "next/image";
 import React from "react";
-import MissionOption from "./mission-option";
-import { Fullscreen } from "lucide-react";
 
 export default function OurMission() {
   return (

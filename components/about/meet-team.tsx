@@ -1,5 +1,6 @@
 import React from "react";
 import StaffCard from "./staff-card";
+import StaffCircleCard from "./staff-circle-card";
 
 export default function MeetTeam() {
   return (
@@ -14,6 +15,11 @@ export default function MeetTeam() {
         <StaffCard />
         <StaffCard />
         <StaffCard />
+      </div>
+      <div className=" grid grid-cols-3 gap-6">
+        <StaffCircleCard />
+        <StaffCircleCard />
+        <StaffCircleCard />
       </div>
     </div>
   );
