@@ -4,7 +4,7 @@ import ContactForm from "./contact-form";
 
 export default function Contact() {
   return (
-    <section className=" grid grid-cols-2">
+    <section className=" my-10 grid grid-cols-2">
       <ContactDetails />
       <ContactForm />
     </section>
