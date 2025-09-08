@@ -15,7 +15,7 @@ export default function StaffCircleCard() {
       <div className=" flex flex-col gap-3 text-center">
         <div>
           <p className=" text-foreground text-2xl font-bold">James Johnson</p>
-          <h3 className=" text-xl text-primary">Founder, of GHRI</h3>
+          <h3 className=" text-md font-medium text-primary">COO, of GHRI</h3>
         </div>
         <p>
           Envision, create, and lead a company from inception, setting its
