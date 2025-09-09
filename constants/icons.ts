@@ -21,6 +21,8 @@ import sponsorIcon2 from "@/assets/svg/sponsor-icon2.svg";
 import sponsorIcon3 from "@/assets/svg/sponsor-icon3.svg";
 import sponsorIcon4 from "@/assets/svg/sponsor-icon4.svg";
 import sponsorIcon5 from "@/assets/svg/sponsor-icon5.svg";
+import kiteIcon from "@/assets/svg/kite.svg";
+import dottedLine from "@/assets/svg/dotted-line.svg";
 
 export const icons = {
   Logo,
@@ -46,4 +48,6 @@ export const icons = {
   sponsorIcon3,
   sponsorIcon4,
   sponsorIcon5,
+  kiteIcon,
+  dottedLine,
 };
