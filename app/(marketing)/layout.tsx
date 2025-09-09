@@ -1,4 +1,5 @@
 import AppNav from "@/components/app-nav";
+import { Footer } from "@/components/footer";
 import React from "react";
 
 export default function layout({ children }: { children: React.ReactNode }) {
@@ -6,6 +7,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
     <div className="background min-h-screen">
       <AppNav />
       {children}
+      <Footer />
     </div>
   );
 }
