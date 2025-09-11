@@ -7,7 +7,7 @@ import FooterList from "./footer-list";
 
 export const Footer = () => {
   return (
-    <footer className="w-full md:px-16">
+    <footer className="w-full bg-background md:px-16">
       {/* Top Links */}
       <div className=" py-4">
         <div className="container mx-auto flex h-full flex-wrap justify-center px-4 py-6 sm:py-6">

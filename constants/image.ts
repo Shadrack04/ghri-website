@@ -11,6 +11,8 @@ import slantImage from "@/assets/images/slant-image.webp";
 import aboutHeaderImage from "@/assets/images/about-header-image.webp";
 import ourStoryImage from "@/assets/images/our-story-image.webp";
 import staffImage from "@/assets/images/staff-image.webp";
+import loginBg from "@/assets/images/login-bg.webp";
+import signupBg from "@/assets/images/signup-bg.webp";
 
 export const images = {
   heroBg,
@@ -26,4 +28,6 @@ export const images = {
   aboutHeaderImage,
   ourStoryImage,
   staffImage,
+  loginBg,
+  signupBg,
 };
