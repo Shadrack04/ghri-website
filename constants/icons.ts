@@ -23,6 +23,8 @@ import sponsorIcon4 from "@/assets/svg/sponsor-icon4.svg";
 import sponsorIcon5 from "@/assets/svg/sponsor-icon5.svg";
 import kiteIcon from "@/assets/svg/kite.svg";
 import dottedLine from "@/assets/svg/dotted-line.svg";
+import authFacebookIcon from "@/assets/svg/auth-facebook-icon.svg";
+import authGoogleIcon from "@/assets/svg/auth-google-icon.svg";
 
 export const icons = {
   Logo,
@@ -50,4 +52,6 @@ export const icons = {
   sponsorIcon5,
   kiteIcon,
   dottedLine,
+  authFacebookIcon,
+  authGoogleIcon,
 };
