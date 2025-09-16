@@ -24,13 +24,21 @@ import {
 } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
+import { paths } from "@/constants/paths";
 
-export default function AuthForm() {
+type AuthFormProps = {
+  type: "register" | "login";
+  onSubmit?: () => void;
+};
+
+export default function AuthForm({ type, onSubmit }: AuthFormProps) {
   const form = useForm();
   return (
-    <Card className=" absolute bg-background top-1/2 right-8 -translate-y-1/2 w-full max-w-lg">
+    <Card className=" absolute bg-background top-1/2 right-8 -translate-y-1/2 w-full max-w-lg z-30">
       <CardHeader className=" gap-6 ">
-        <CardTitle className=" text-center text-4xl">Create Account</CardTitle>
+        <CardTitle className=" text-center text-4xl">
+          {type === "register" ? "Create Account" : "Login"}
+        </CardTitle>
         <CardDescription className=" flex flex-col px-0 items-center gap-4">
           <div className=" flex justify-between w-full">
             <Button variant={"outline"} className=" py-6">
@@ -84,14 +92,18 @@ export default function AuthForm() {
                 )}
               />
             </div>
-            <div className=" py-2 flex flex-col gap-2">
-              <p className=" text-lg text-muted">what are you registering as</p>
-              <RegisterRadio />
-            </div>
+            {type === "register" && (
+              <div className=" py-2 flex flex-col gap-2">
+                <p className=" text-lg text-muted">
+                  what are you registering as
+                </p>
+                <RegisterRadio />
+              </div>
+            )}
 
             <div className="flex justify-center w-full mt-4">
               <Button type="submit" className="">
-                Create Account
+                {type === "register" ? "Create Account" : "Login"}
               </Button>
             </div>
           </form>
@@ -99,9 +111,15 @@ export default function AuthForm() {
       </CardContent>
       <CardFooter className=" justify-center">
         <p>
-          Already have and account?{" "}
-          <Link href="#" className=" text-primary">
-            Log in
+          {type === "register"
+            ? "Already have and account?"
+            : "Don't have an account?"}
+
+          <Link
+            href={paths.auth[type == "register" ? "login" : "signup"]}
+            className=" text-primary"
+          >
+            {type === "register" ? "Login" : "Signup"}
           </Link>
         </p>
       </CardFooter>
