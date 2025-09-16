@@ -28,7 +28,7 @@ import Link from "next/link";
 export default function AuthForm() {
   const form = useForm();
   return (
-    <Card className=" absolute bg-background top-1/2 left-1/2 -translate-1/2 w-full max-w-lg">
+    <Card className=" absolute bg-background top-1/2 right-8 -translate-y-1/2 w-full max-w-lg">
       <CardHeader className=" gap-6 ">
         <CardTitle className=" text-center text-4xl">Create Account</CardTitle>
         <CardDescription className=" flex flex-col px-0 items-center gap-4">

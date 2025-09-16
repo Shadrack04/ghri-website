@@ -5,8 +5,8 @@ import { images } from "@/constants/image";
 
 export default function SignupScreen() {
   return (
-    <div className=" relative min-h-screen">
-      <Image src={images.signupBg} alt="" className=" object-contain" />
+    <div className=" relative  aspect-video w-full bg-amber-500">
+      <Image src={images.signupBg} alt="" fill className=" " />
       <AuthForm />
     </div>
   );
