@@ -1,0 +1,154 @@
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import React from "react";
+import {
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import CustomRadioInput from "./custom-radio";
+import { UseFormReturn } from "react-hook-form";
+
+const genderData = [
+  { value: "male", label: "Male" },
+  { value: "female", label: "Female" },
+];
+
+type Props = {
+  form: UseFormReturn<any>;
+};
+
+export default function PersonalSetup({ form }: Props) {
+  return (
+    <div className=" w-full">
+      <div className="flex flex-col gap-6">
+        <FormField
+          control={form.control}
+          name="fullName"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className=" text-muted">Full Name</FormLabel>
+              <FormControl>
+                <Input
+                  type="text"
+                  placeholder="Your Full name"
+                  {...field}
+                  className=" py-6 px-4 border-2 border-[#E5E7EB]"
+                />
+              </FormControl>
+            </FormItem>
+          )}
+        />
+
+        <div className=" grid grid-cols-2 gap-8">
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className=" text-muted">Phone Number</FormLabel>
+                <FormControl>
+                  <Input
+                    type="number"
+                    placeholder="+234"
+                    {...field}
+                    className=" bg-none py-6 px-4 border-2 border-[#E5E7EB]"
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className=" text-muted">Email</FormLabel>
+                <FormControl>
+                  <Input
+                    type="email"
+                    placeholder="e.g jamesjohnson@gmail.com"
+                    {...field}
+                    className=" bg-none py-6 px-4 border-2 border-[#E5E7EB]"
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="dateOfBirth"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className=" text-muted">Date of Birth</FormLabel>
+                <FormControl>
+                  <Input
+                    type="date"
+                    placeholder="DD/MM/YYYY"
+                    {...field}
+                    className=" bg-none py-6 px-4 border-2 border-[#E5E7EB]"
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+
+          <div className=" flex flex-col justify-center gap-4">
+            <p>Gender</p>
+
+            <CustomRadioInput radioArray={genderData} />
+          </div>
+
+          <FormField
+            control={form.control}
+            name="address"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className=" text-muted">Address</FormLabel>
+                <FormControl>
+                  <Input
+                    type="text"
+                    placeholder="Enter your address"
+                    {...field}
+                    className=" bg-none py-6 px-4 border-2 border-[#E5E7EB]"
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="zipCode"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className=" text-muted">Zip Code</FormLabel>
+                <FormControl>
+                  <Input
+                    type="number"
+                    placeholder="e.g 100001"
+                    {...field}
+                    className=" bg-none py-6 px-4 border-2 border-[#E5E7EB]"
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+        </div>
+      </div>
+
+      <div className="flex justify-between w-full mt-4">
+        <button>
+          <ArrowLeft className=" size-8" />
+        </button>
+        <Button type="submit" className="">
+          Next
+        </Button>
+      </div>
+    </div>
+  );
+}

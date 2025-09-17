@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { icons } from "@/constants/icons";
 import Image from "next/image";
-import RegisterRadio from "./register-radio";
+
 import {
   Form,
   FormControl,
@@ -25,6 +25,18 @@ import {
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { paths } from "@/constants/paths";
+import CustomRadioInput from "./custom-radio";
+
+const registerRadioData = [
+  {
+    value: "patience",
+    label: "Patience",
+  },
+  {
+    value: "doctor",
+    label: "Doctor",
+  },
+];
 
 type AuthFormProps = {
   type: "register" | "login";
@@ -97,7 +109,7 @@ export default function AuthForm({ type, onSubmit }: AuthFormProps) {
                 <p className=" text-lg text-muted">
                   what are you registering as
                 </p>
-                <RegisterRadio />
+                <CustomRadioInput radioArray={registerRadioData} />
               </div>
             )}
 
