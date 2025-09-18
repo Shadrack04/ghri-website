@@ -140,15 +140,6 @@ export default function PersonalSetup({ form }: Props) {
           />
         </div>
       </div>
-
-      <div className="flex justify-between w-full mt-4">
-        <button>
-          <ArrowLeft className=" size-8" />
-        </button>
-        <Button type="submit" className="">
-          Next
-        </Button>
-      </div>
     </div>
   );
 }

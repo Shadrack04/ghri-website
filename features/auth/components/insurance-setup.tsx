@@ -15,17 +15,17 @@ type Props = {
 export default function InsuranceSetup({ form }: Props) {
   return (
     <div className=" w-full">
-      <div className=" grid grid-cols-2 gap-8">
+      <div className=" grid grid-cols-2 gap-8 mb-8">
         <FormField
           control={form.control}
-          name="fullName"
+          name="insuranceProvider"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className=" text-muted">Full Name</FormLabel>
+              <FormLabel className=" text-muted">Insurance Provider</FormLabel>
               <FormControl>
                 <Input
                   type="text"
-                  placeholder="Your Full name"
+                  placeholder="Enter full details"
                   {...field}
                   className=" py-6 px-4 border-2 border-[#E5E7EB]"
                 />
@@ -36,16 +36,38 @@ export default function InsuranceSetup({ form }: Props) {
 
         <FormField
           control={form.control}
-          name="fullName"
+          name="policyNumber"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className=" text-muted">Full Name</FormLabel>
+              <FormLabel className=" text-muted">Policy Number</FormLabel>
               <FormControl>
                 <Input
-                  type="text"
-                  placeholder="Your Full name"
+                  type="number"
+                  placeholder="e.g 1234567890"
                   {...field}
                   className=" py-6 px-4 border-2 border-[#E5E7EB]"
+                />
+              </FormControl>
+            </FormItem>
+          )}
+        />
+      </div>
+
+      <div className=" w-sm">
+        <FormField
+          control={form.control}
+          name="policyDoc"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className=" text-muted">
+                Please upload the policy doc
+              </FormLabel>
+              <FormControl>
+                <Input
+                  type="file"
+                  placeholder="e.g 1234567890"
+                  {...field}
+                  className=" border-2 w-[8rem] border-[#E5E7EB]"
                 />
               </FormControl>
             </FormItem>

@@ -13,6 +13,8 @@ import HealthHistorySetup from "./health-history-setup";
 import { Form } from "@/components/ui/form";
 import PersonalSetup from "./personal-setup";
 import InsuranceSetup from "./insurance-setup";
+import { ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const progressState = [
   { name: "Personal Details", no: "1" },
@@ -24,6 +26,7 @@ const progress = undefined;
 
 export default function UserSetup() {
   const form = useForm();
+
   return (
     <Card className=" absolute bg-background top-1/2 left-1/2 -translate-1/2 w-full max-w-6xl z-30">
       <CardHeader className=" gap-6 ">
@@ -50,10 +53,18 @@ export default function UserSetup() {
           ))}
         </div>
         <Form {...form}>
-          <form className=" w-full">
-            {/* <PersonalSetup form={form} /> */}
+          <form className=" w-full flex flex-col justify-between">
+            <PersonalSetup form={form} />
             {/* <HealthHistorySetup form={form} /> */}
-            <InsuranceSetup form={form} />
+            {/* <InsuranceSetup form={form} /> */}
+            <div className="flex justify-between w-full mt-4">
+              <button>
+                <ArrowLeft className=" size-8" />
+              </button>
+              <Button type="submit" className="">
+                Next
+              </Button>
+            </div>
           </form>
         </Form>
       </CardContent>
