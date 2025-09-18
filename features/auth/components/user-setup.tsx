@@ -15,6 +15,7 @@ import PersonalSetup from "./personal-setup";
 import InsuranceSetup from "./insurance-setup";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const progressState = [
   { name: "Personal Details", no: "1" },
@@ -22,10 +23,30 @@ const progressState = [
   { name: "Insurance Information", no: "3" },
 ];
 
-const progress = undefined;
-
 export default function UserSetup() {
+  const [currentStep, setCurrentStep] = useState(1);
   const form = useForm();
+
+  const handleNextStep = () => {
+    if (currentStep === 3) return;
+    let fieldsToValidate: string[] = [];
+
+    if (currentStep === 1) {
+      fieldsToValidate = ["fullName", "phone"];
+    }
+    setCurrentStep((prev) => prev + 1);
+  };
+
+  const handlePrevStep = () => {
+    if (currentStep === 1) return;
+    setCurrentStep((prev) => prev - 1);
+  };
+
+  const onSubmit = (data: any) => {
+    if (currentStep < 3) handleNextStep();
+
+    console.log(data);
+  };
 
   return (
     <Card className=" absolute bg-background top-1/2 left-1/2 -translate-1/2 w-full max-w-6xl z-30">
@@ -43,7 +64,7 @@ export default function UserSetup() {
             >
               <p
                 className={`${
-                  progress === item.name ? "bg-primary" : "bg-muted"
+                  currentStep >= index + 1 ? "bg-primary" : "bg-muted"
                 } flex justify-center items-center text-center text-[18px] rounded-full w-[35px] h-[35px] text-white`}
               >
                 {item.no}
@@ -53,12 +74,18 @@ export default function UserSetup() {
           ))}
         </div>
         <Form {...form}>
-          <form className=" w-full flex flex-col justify-between">
-            <PersonalSetup form={form} />
-            {/* <HealthHistorySetup form={form} /> */}
-            {/* <InsuranceSetup form={form} /> */}
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className=" w-full flex flex-col justify-between"
+          >
+            {currentStep === 1 && <PersonalSetup form={form} />}
+
+            {currentStep === 2 && <HealthHistorySetup form={form} />}
+
+            {currentStep === 3 && <InsuranceSetup form={form} />}
+
             <div className="flex justify-between w-full mt-4">
-              <button>
+              <button type="button" onClick={handlePrevStep}>
                 <ArrowLeft className=" size-8" />
               </button>
               <Button type="submit" className="">

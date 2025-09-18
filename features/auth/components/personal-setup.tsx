@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+"use client";
+
 import React from "react";
 import {
   FormControl,
@@ -100,7 +100,11 @@ export default function PersonalSetup({ form }: Props) {
           <div className=" flex flex-col justify-center gap-4">
             <p>Gender</p>
 
-            <CustomRadioInput radioArray={genderData} />
+            <CustomRadioInput
+              name="gender"
+              control={form.control}
+              radioArray={genderData}
+            />
           </div>
 
           <FormField

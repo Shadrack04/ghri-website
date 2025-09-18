@@ -1,8 +1,9 @@
+"use client";
+
 import React from "react";
 import CustomRadioInput from "./custom-radio";
 import { healthHistoryRadioData } from "../data";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+
 import { UseFormReturn } from "react-hook-form";
 import {
   FormControl,
