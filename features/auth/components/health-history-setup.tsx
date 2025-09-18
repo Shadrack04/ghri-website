@@ -29,6 +29,8 @@ export default function HealthHistorySetup({ form }: Props) {
         </p>
       </div>
       <CustomRadioInput
+        name="healthHistory"
+        control={form.control}
         radioArray={healthHistoryRadioData}
         className=" grid grid-cols-2 gap-6 w-[60%]"
       />

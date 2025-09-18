@@ -1,3 +1,5 @@
+"use client";
+
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { RadioArrayType } from "../type/type";
@@ -24,7 +26,7 @@ export default function CustomRadioInput({
       control={control}
       render={({ field }) => (
         <RadioGroup
-          onValueChange={field.value}
+          onValueChange={field.onChange}
           value={field.value}
           defaultValue=""
           className={cn(" flex gap-3 text-muted", className)}
