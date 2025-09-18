@@ -47,7 +47,7 @@ export default function HealthHistorySetup({ form }: Props) {
           name="reason"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className=" text-muted">Phone Number</FormLabel>
+              <FormLabel className=" text-muted"></FormLabel>
               <FormControl>
                 <Textarea
                   placeholder=""

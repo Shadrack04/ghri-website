@@ -8,6 +8,12 @@ export const userSetupFormSchema = z.object({
   dateOfBirth: z.number(),
   address: z.string().min(5),
   zipCode: z.number(),
+  healthHistory: z.string(),
+  reason: z.string().min(10, "Message should be at least 10 characters long"),
+  insuranceProvider: z
+    .string()
+    .min(5, "Message should be at least 10 characters long"),
+  policyNumber: z.number().min(6),
 });
 
 export type userSetupFormType = z.infer<typeof userSetupFormSchema>;
