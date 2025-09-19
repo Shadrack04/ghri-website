@@ -105,7 +105,11 @@ export default function UserSetup() {
             {currentStep === 3 && <InsuranceSetup form={form} />}
 
             <div className="flex justify-between w-full mt-4">
-              <button type="button" onClick={handlePrevStep}>
+              <button
+                type="button"
+                onClick={handlePrevStep}
+                className=" cursor-pointer"
+              >
                 <ArrowLeft className=" size-8" />
               </button>
               <Button type="submit" className="">
