@@ -89,7 +89,13 @@ export default function UserSetup() {
               >
                 {item.no}
               </p>
-              <p className="text-[20px]">{item.name}</p>
+              <p
+                className={` ${
+                  currentStep >= index + 1 ? " text-primary" : ""
+                } text-xl `}
+              >
+                {item.name}
+              </p>
             </div>
           ))}
         </div>
