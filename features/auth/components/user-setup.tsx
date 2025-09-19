@@ -16,6 +16,8 @@ import InsuranceSetup from "./insurance-setup";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { userSetupFormSchema, UserSetupFormType } from "../validation";
 
 const progressState = [
   { name: "Personal Details", no: "1" },
@@ -25,16 +27,34 @@ const progressState = [
 
 export default function UserSetup() {
   const [currentStep, setCurrentStep] = useState(1);
-  const form = useForm();
+  const form = useForm({
+    resolver: zodResolver(userSetupFormSchema),
+  });
 
-  const handleNextStep = () => {
+  const handleNextStep = async () => {
     if (currentStep === 3) return;
-    let fieldsToValidate: string[] = [];
+    if (currentStep < progressState.length) {
+      let fieldsToValidate: (keyof UserSetupFormType)[] = [];
+      if (currentStep === 1) {
+        fieldsToValidate = [
+          "fullName",
+          "phone",
+          "email",
+          "dateOfBirth",
+          "address",
+          "zipCode",
+        ];
+      } else if (currentStep === 2) {
+        fieldsToValidate = ["healthHistory", "reason"];
+      } else {
+        fieldsToValidate = ["insuranceProvider", "policyNumber"];
+      }
 
-    if (currentStep === 1) {
-      fieldsToValidate = ["fullName", "phone"];
+      const isStepValid = await form.trigger(fieldsToValidate);
+      if (isStepValid) {
+        setCurrentStep((prev) => prev + 1);
+      }
     }
-    setCurrentStep((prev) => prev + 1);
   };
 
   const handlePrevStep = () => {

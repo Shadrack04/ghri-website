@@ -10,6 +10,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -45,6 +46,9 @@ export default function HealthHistorySetup({ form }: Props) {
         <FormField
           control={form.control}
           name="reason"
+          rules={{
+            required: "Reason for booking is required",
+          }}
           render={({ field }) => (
             <FormItem>
               <FormLabel className=" text-muted"></FormLabel>
@@ -55,6 +59,7 @@ export default function HealthHistorySetup({ form }: Props) {
                   className=" bg-none py-6 px-4 border-2 h-32 border-[#E5E7EB]"
                 />
               </FormControl>
+              <FormMessage />
             </FormItem>
           )}
         />
