@@ -41,12 +41,14 @@ export default function Banner() {
 
       <SocialLinks />
 
-      <div className="absolute z-20 bottom-12 flex flex-col items-center justify-center w-full">
-        <div className="mb-10 flex flex-col gap-10 items-center justify-center">
-          <h1 className="text-6xl font-[400] leading-0.5 tracking-widest text-white text-center">
-            Transforming Healthcare in <br />
+      <div className="absolute z-20 bottom-1/2 translate-y-1/2 md:translate-0 md:bottom-12 flex flex-col items-center justify-center w-full">
+        <div className="mb-10 px-4 flex flex-col gap-10 items-center justify-center">
+          <h1 className=" text-4xl md:text-6xl font-[400] md:leading-0.5 md:tracking-widest text-white text-center">
+            Transforming Healthcare in <br className=" hidden md:flex" />
             <span className="font-bold">Nigeria</span>
-            <span className="text-secondary -ml-2 text-8xl font-medium">.</span>
+            <span className=" hidden md:inline-block text-secondary mt-0 -ml-2 text-6xl md:text-8xl font-medium">
+              .
+            </span>
           </h1>
           <div className="">
             <Button className="rounded-xl px-12 py-7 text-lg font-bold">
