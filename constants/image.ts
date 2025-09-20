@@ -13,6 +13,7 @@ import ourStoryImage from "@/assets/images/our-story-image.webp";
 import staffImage from "@/assets/images/staff-image.webp";
 import loginBg from "@/assets/images/login-bg.webp";
 import signupBg from "@/assets/images/signup-bg.webp";
+import heroBgMobile from "@/assets/images/herobg-mobile.webp";
 
 export const images = {
   heroBg,
@@ -30,4 +31,5 @@ export const images = {
   staffImage,
   loginBg,
   signupBg,
+  heroBgMobile,
 };

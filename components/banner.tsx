@@ -7,10 +7,31 @@ import SocialLinks from "./social-links";
 
 export default function Banner() {
   return (
-    <div className=" relative overflow-hidden">
-      <Image src={images.heroBg} alt="Hero image" className="" />
+    <div className=" relative overflow-hidden h-screen bg-amber-400">
+      {/* <Image
+        src={images.heroBg}
+        fill
+        alt="Hero image"
+        className=" object-cover"
+      /> */}
 
-      <div className="absolute top-28 right-20 z-10 size-16 rounded-full">
+      <picture>
+        <source
+          srcSet="/images/herobg-mobile.webp"
+          media="(max-width: 768px)"
+        />
+
+        <source srcSet="/images/herobg.webp" media="(min-width: 769px)" />
+        <Image
+          src="/images/herobg.webp"
+          alt="Hero background"
+          fill
+          priority
+          className="object-cover"
+        />
+      </picture>
+
+      <div className="hidden md:block absolute top-28 right-20 z-10 size-16 rounded-full">
         <Image src={icons.shortArrow} alt="a short arrow" />
       </div>
 

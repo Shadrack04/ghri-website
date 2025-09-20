@@ -5,7 +5,7 @@ import { icons } from "@/constants/icons";
 
 export default function SocialLinks() {
   return (
-    <div className="absolute bottom-18 left-20 z-10 flex flex-col items-center justify-center gap-2">
+    <div className="absolute hidden md:flex bottom-18 left-6 md:left-20 z-10 flex-col items-center justify-center gap-2">
       <Image src={icons.longArrow} alt="a long arrow" className=" h-44" />
       <Link className="" href="#">
         <Image src={icons.linkedinIcon} alt="linkedin icon" />
