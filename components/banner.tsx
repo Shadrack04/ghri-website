@@ -7,7 +7,7 @@ import SocialLinks from "./social-links";
 
 export default function Banner() {
   return (
-    <div className=" relative overflow-hidden h-screen bg-amber-400">
+    <div className=" relative overflow-hidden h-screen">
       {/* <Image
         src={images.heroBg}
         fill

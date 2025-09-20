@@ -31,7 +31,7 @@ export default function KeyInitiatives() {
 
   return (
     <div className="py-20">
-      <div className="mb-18 flex flex-col items-center justify-center gap-4">
+      <div className="mb-18 flex flex-col items-center justify-center gap-4 px-6">
         <h1 className="text-4xl">Key Initiatives</h1>
         <p className="text-center md:text-xl">
           We thrive at impacting lives because are into things that{" "}

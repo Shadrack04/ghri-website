@@ -123,7 +123,7 @@
 }
 
 .custom-padding {
-  @apply px-18;
+  @apply px-4 md:px-18;
 }
 
 .background {

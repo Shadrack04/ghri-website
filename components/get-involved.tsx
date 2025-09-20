@@ -5,12 +5,12 @@ import { images } from "@/constants/image";
 
 export default function GetInvolved() {
   return (
-    <div className="relative my-20 min-h-screen">
+    <div className="relative my-20 md:min-h-screen">
       <Image
         src={images.getInvolvedImage}
         alt="Get involved background image"
       />
-      <div className="absolute top-30 right-0 z-10 w-[50%] bg-white/50 px-12 py-16 backdrop-blur-xl">
+      <div className="absolute hidden md:block top-30 right-0 z-10 w-[50%] bg-white/50 px-12 py-16 backdrop-blur-xl">
         <h2 className="mb-8 flex items-center gap-2 text-4xl">
           Get Involved
           <Image
@@ -26,7 +26,7 @@ export default function GetInvolved() {
           donations, volunteering, or partnerships.
         </p>
       </div>
-      <div className="absolute right-24 bottom-10 border-2 border-background z-10 flex w-[80%] gap-2 rounded-xl bg-white/50">
+      <div className="absolute md:right-24 md:bottom-10 border-2 border-background z-10 flex w-[80%] gap-2 rounded-xl bg-white/50">
         <Image
           src={images.volunter}
           alt="volunteer doctor and a patient"
