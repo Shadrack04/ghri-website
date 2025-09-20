@@ -6,11 +6,11 @@ import React from "react";
 export default function GlobalHealth() {
   return (
     <div className=" py-20">
-      <div className="mb-6 flex flex-col items-center justify-center gap-4 md:mb-18">
+      <div className="mb-8 flex flex-col items-center justify-center gap-4 md:mb-18">
         <h1 className="text-4xl">About Us</h1>
         <p className="text-xl">A little bit about what and who we are</p>
       </div>
-      <div className=" flex items-center">
+      <div className=" flex flex-col-reverse md:flex-row gap-4 items-center">
         <Image src={images.aboutHelp} alt="" className=" flex-1" />
 
         <div className="mb-8 flex w-full flex-col justify-center px-2 md:mb-0 md:px-12 flex-1">
