@@ -31,7 +31,7 @@ export function SideBar() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild className=" md:hidden">
-        <Button variant="outline">
+        <Button>
           <Menu className=" size-6" />
         </Button>
       </SheetTrigger>

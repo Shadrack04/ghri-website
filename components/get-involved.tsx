@@ -26,7 +26,7 @@ export default function GetInvolved() {
           donations, volunteering, or partnerships.
         </p>
       </div>
-      <div className="absolute md:right-24 md:bottom-10 border-2 border-background z-10 flex w-[80%] gap-2 rounded-xl bg-white/50">
+      <div className=" static md:absolute md:right-24 md:bottom-10 border-2 border-background z-10 flex flex-wrap md:flex-nowrap w-full md:w-[80%] gap-2 rounded-xl bg-white/50">
         <Image
           src={images.volunter}
           alt="volunteer doctor and a patient"
