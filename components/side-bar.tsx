@@ -46,7 +46,7 @@ export function SideBar() {
           </Link>
 
           <Link
-            href="/"
+            href="/about"
             onClick={handleLinkClick}
             className=" text-[100%] font-bold"
           >
