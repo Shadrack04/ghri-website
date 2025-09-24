@@ -11,12 +11,12 @@ export default function MeetTeam() {
           Meet our exceptional medical team on the job
         </p>
       </div>
-      <div className=" grid grid-cols-3 gap-6">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-6">
         <StaffCard />
         <StaffCard />
         <StaffCard />
       </div>
-      <div className=" grid grid-cols-3 gap-6">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-6">
         <StaffCircleCard />
         <StaffCircleCard />
         <StaffCircleCard />

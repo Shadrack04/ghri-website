@@ -5,8 +5,12 @@ import React from "react";
 export default function OurStory() {
   return (
     <div className=" my-30 grid grid-cols-1 md:grid-cols-2 place-items-center gap-4">
-      <Image src={images.ourStoryImage} alt="" className=" order-2" />
-      <div className=" order-1 flex flex-col gap-8">
+      <Image
+        src={images.ourStoryImage}
+        alt=""
+        className=" order-2 md:order-1"
+      />
+      <div className=" order-1 md:order-2 flex flex-col gap-8">
         <h2 className=" text-4xl text-foreground">Our Story</h2>
         <p className=" w-[31rem] text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas
