@@ -37,7 +37,7 @@ export default function NewsLetter() {
       <Image
         src={icons.dottedLine}
         alt=""
-        className=" absolute left-105 bottom-5.5"
+        className="hidden md:flex absolute left-105 bottom-5.5 "
       />
     </div>
   );
