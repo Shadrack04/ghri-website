@@ -5,8 +5,8 @@ import React from "react";
 
 export default function OurMission() {
   return (
-    <div className=" relative h-screen">
-      <div>
+    <div className=" relative md:h-screen">
+      <div className=" hidden md:flex">
         <Image
           src={images.slantImage}
           alt="our mission image"
@@ -14,13 +14,13 @@ export default function OurMission() {
           className=" "
         />
       </div>
-      <div className=" absolute top-4 inset-x-0 flex items-center justify-center">
+      <div className=" static md:absolute mb-6 md:mb-0 top-4 inset-x-0 flex items-center justify-center">
         <h1 className="  text-4xl">Our Mission and Vision</h1>
       </div>
 
       {/* <MissionOption /> */}
 
-      <div className=" absolute w-2/3 right-0 top-24 px-6">
+      <div className=" md:absolute w-2/3 right-0 top-24 px-6">
         <div className=" relative top-0 w-90 left-0 flex items-center justify-center gap-6">
           <div className=" bg-primary p-2.5 flex items-center justify-center rounded-full">
             <Image
@@ -40,7 +40,7 @@ export default function OurMission() {
           </div>
         </div>
 
-        <div className=" relative top-10 w-90 left-34 flex items-center justify-center gap-6">
+        <div className=" relative top-10 w-90 md:left-34 flex items-center justify-center gap-6">
           <div className=" bg-primary p-2.5 flex items-center justify-center rounded-full">
             <Image
               src={icons.dartIcon}
@@ -59,7 +59,7 @@ export default function OurMission() {
           </div>
         </div>
 
-        <div className=" relative top-20 w-90 left-70 flex items-center justify-center gap-6">
+        <div className=" relative top-20 w-90 md:left-70 flex items-center justify-center gap-6">
           <div className=" bg-primary p-2.5 flex items-center justify-center rounded-full">
             <Image
               src={icons.dartIcon}
