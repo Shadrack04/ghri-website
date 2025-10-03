@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { paths } from "@/constants/paths"
+import Link from "next/link";
+import { paths } from "@/constants/paths";
 
 export default function FooterList() {
   return (
@@ -52,14 +52,14 @@ export default function FooterList() {
           <Link href={paths.public.privacy_policy} className="hover:underline">
             Twitter
           </Link>
-          <Link href={paths.public.term_of_use} className="hover:underline">
+          <Link href="#" className="hover:underline">
             Instagram
           </Link>
-          <Link href={paths.public.term_of_use} className="hover:underline">
+          <Link href="#" className="hover:underline">
             Threads
           </Link>
         </nav>
       </div>
     </div>
-  )
+  );
 }

@@ -59,7 +59,7 @@ export default function Navigation() {
                   <Link href="#">Projects</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Our Services</Link>
+                  <Link href={paths.public.services}>Our Services</Link>
                 </NavigationMenuLink>
               </li>
             </ul>

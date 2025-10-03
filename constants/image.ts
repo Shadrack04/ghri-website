@@ -14,6 +14,8 @@ import staffImage from "@/assets/images/staff-image.webp";
 import loginBg from "@/assets/images/login-bg.webp";
 import signupBg from "@/assets/images/signup-bg.webp";
 import heroBgMobile from "@/assets/images/herobg-mobile.webp";
+import serviceImg2 from "@/assets/images/services-img2.webp";
+import serviceImg3 from "@/assets/images/services-img3.webp";
 
 export const images = {
   heroBg,
@@ -32,4 +34,6 @@ export const images = {
   loginBg,
   signupBg,
   heroBgMobile,
+  serviceImg2,
+  serviceImg3,
 };

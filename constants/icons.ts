@@ -25,6 +25,9 @@ import kiteIcon from "@/assets/svg/kite.svg";
 import dottedLine from "@/assets/svg/dotted-line.svg";
 import authFacebookIcon from "@/assets/svg/auth-facebook-icon.svg";
 import authGoogleIcon from "@/assets/svg/auth-google-icon.svg";
+import ambulanceIcon from "@/assets/svg/ambulance-icon.svg";
+import systemsIcon from "@/assets/svg/systems-icon.svg";
+import worldCareIcon from "@/assets/svg/world-care-icon.svg";
 
 export const icons = {
   Logo,
@@ -54,4 +57,7 @@ export const icons = {
   dottedLine,
   authFacebookIcon,
   authGoogleIcon,
+  ambulanceIcon,
+  worldCareIcon,
+  systemsIcon,
 };

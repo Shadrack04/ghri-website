@@ -10,7 +10,7 @@ export const paths = {
   public: {
     home: "/landing",
     about: "/about",
-    term_of_use: "/terms-of-use",
+    services: "/services",
     privacy_policy: "/privacy-policy",
     community: "/community",
     faqs: "/faqs",
@@ -40,6 +40,6 @@ export const paths = {
         `${paths.private.movie.root}/${movieId}/episode/${episodeId}`,
     },
   },
-} as const
+} as const;
 
-export type PathsTypes = typeof paths
+export type PathsTypes = typeof paths;
