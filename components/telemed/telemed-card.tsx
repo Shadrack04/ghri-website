@@ -9,6 +9,7 @@ type ServiceCardProps = {
   title: string;
   description: string;
   className?: string;
+  iconClassName?: string;
 };
 
 export default function TelemedCard({
@@ -16,6 +17,7 @@ export default function TelemedCard({
   title,
   description,
   className,
+  iconClassName,
 }: ServiceCardProps) {
   return (
     <Card
@@ -24,7 +26,7 @@ export default function TelemedCard({
         className
       )}
     >
-      <div className=" p-4 bg-primary rounded-full mb-4">
+      <div className={cn(" p-4 rounded-full mb-4", iconClassName)}>
         <Image src={icon} alt="" />
       </div>
       <h3 className=" text-2xl font-bold text-center">{title}</h3>

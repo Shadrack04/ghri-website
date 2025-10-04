@@ -28,6 +28,9 @@ import authGoogleIcon from "@/assets/svg/auth-google-icon.svg";
 import ambulanceIcon from "@/assets/svg/ambulance-icon.svg";
 import systemsIcon from "@/assets/svg/systems-icon.svg";
 import worldCareIcon from "@/assets/svg/world-care-icon.svg";
+import pillIcon from "@/assets/svg/pill-icon.svg";
+import worldCareIconRed from "@/assets/svg/world-care-icon-red.svg";
+import telemedEllipse from "@/assets/svg/telemed-ellipse.svg";
 
 export const icons = {
   Logo,
@@ -60,4 +63,7 @@ export const icons = {
   ambulanceIcon,
   worldCareIcon,
   systemsIcon,
+  pillIcon,
+  worldCareIconRed,
+  telemedEllipse,
 };
