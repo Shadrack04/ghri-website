@@ -134,3 +134,7 @@
 
   inset: 0;
 }
+
+.card-shadow {
+  box-shadow: 0 0 20px var(--primary);
+}

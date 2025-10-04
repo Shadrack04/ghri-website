@@ -102,7 +102,7 @@ export default function Navigation() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Telemed</Link>
+            <Link href="/telemed">Telemed</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
