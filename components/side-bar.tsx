@@ -22,6 +22,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
+import path from "path";
+import { paths } from "@/constants/paths";
 
 export function SideBar() {
   const [open, setOpen] = useState(false);
@@ -110,7 +112,7 @@ export function SideBar() {
           </Link>
 
           <Link
-            href="#"
+            href={paths.public.telemed}
             onClick={handleLinkClick}
             className=" text-[100%] font-bold"
           >

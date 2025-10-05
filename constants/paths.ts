@@ -11,7 +11,7 @@ export const paths = {
     home: "/landing",
     about: "/about",
     services: "/services",
-    privacy_policy: "/privacy-policy",
+    telemed: "/telemed",
     community: "/community",
     faqs: "/faqs",
     contact_us: "/contact-us",
