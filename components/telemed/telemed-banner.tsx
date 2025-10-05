@@ -7,13 +7,13 @@ import { icons } from "@/constants/icons";
 
 export default function TelemedBanner() {
   return (
-    <div className=" relative">
-      <div className=" flex flex-col md:flex-row items-center">
+    <div className=" custom-padding relative">
+      <div className=" flex flex-col md:flex-row gap-4 md:gap-0 items-center">
         <div className=" flex flex-col gap-4">
           <h1 className=" text-6xl text-foreground leading-20">
             Keep your doctors <span className=" font-bold">in the loop</span>
           </h1>
-          <p className=" text-xl w-[32rem]">
+          <p className=" text-xl md:w-[32rem]">
             Securely share your comprehensive medical history with your doctors
             for better communication and care
           </p>
@@ -25,16 +25,17 @@ export default function TelemedBanner() {
         </div>
         <Image
           src={images.telemedImg1}
+          priority
           alt="telemed banner image of three doctors"
           className=" md:w-[80%]"
         />
       </div>
-      <div className=" w-[70%] mx-auto -mt-10 flex items-center">
+      <div className=" md:w-[70%] mx-auto md:-mt-10 flex flex-col md:flex-row items-center">
         <TelemedCard
           icon={icons.ambulanceIcon}
           title="Emergency Care"
           description="Must be the priority for any health care"
-          className=" -mr-2"
+          className=" md:-mr-2"
           iconClassName=" bg-primary"
         />
 
@@ -50,14 +51,14 @@ export default function TelemedBanner() {
           icon={icons.worldCareIconRed}
           title="Emergency Care"
           description="Must be the priority for any health care"
-          className=" -ml-2"
+          className=" md:-ml-2"
           iconClassName=" bg-background"
         />
       </div>
       <Image
         src={icons.telemedEllipse}
         alt=""
-        className=" absolute bottom-0 left-16 size-28"
+        className=" absolute bottom-0 -left-16 md:left-16 size-28"
       />
     </div>
   );

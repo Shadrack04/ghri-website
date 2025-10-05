@@ -49,7 +49,7 @@ export default function FooterList() {
       <div className="flex flex-col items-start">
         <p className="mb-3">Socials</p>
         <nav className="flex flex-col flex-wrap justify-center gap-3 text-sm">
-          <Link href={paths.public.privacy_policy} className="hover:underline">
+          <Link href="#" className="hover:underline">
             Twitter
           </Link>
           <Link href="#" className="hover:underline">

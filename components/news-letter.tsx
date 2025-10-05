@@ -12,7 +12,7 @@ export default function NewsLetter() {
         <h3 className=" font-[650] text-center md:text-left text-4xl text-foreground ">
           Join our Newsletter
         </h3>
-        <p className=" text-xl">
+        <p className=" text-xl text-center w-[24rem] md:w-auto">
           our newsletter helps to keep everyone in the loop
         </p>
       </div>

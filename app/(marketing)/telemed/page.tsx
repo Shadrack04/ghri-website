@@ -3,7 +3,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className=" custom-padding mt-22">
+    <div className="  mt-22">
       <TelemedScreen />
     </div>
   );
