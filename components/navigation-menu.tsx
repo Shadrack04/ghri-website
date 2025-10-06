@@ -15,6 +15,7 @@ import {
 import { paths } from "@/constants/paths";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { ConfirmationModal } from "./confirmation-modal";
 
 export default function Navigation() {
   const pathName = usePathname();
@@ -50,6 +51,7 @@ export default function Navigation() {
             <Link href={paths.public.about}>About Us</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        <ConfirmationModal />
 
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>

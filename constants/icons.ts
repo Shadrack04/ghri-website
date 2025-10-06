@@ -31,6 +31,8 @@ import worldCareIcon from "@/assets/svg/world-care-icon.svg";
 import pillIcon from "@/assets/svg/pill-icon.svg";
 import worldCareIconRed from "@/assets/svg/world-care-icon-red.svg";
 import telemedEllipse from "@/assets/svg/telemed-ellipse.svg";
+import confirmationVector2 from "@/assets/svg/confirmation-vector2.svg";
+import confirmationVector3 from "@/assets/svg/confirmation-vector3.svg";
 
 export const icons = {
   Logo,
@@ -66,4 +68,6 @@ export const icons = {
   pillIcon,
   worldCareIconRed,
   telemedEllipse,
+  confirmationVector2,
+  confirmationVector3,
 };
