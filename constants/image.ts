@@ -21,6 +21,7 @@ import serviceBg3 from "@/assets/images/service-bg3.png";
 import telemedImg1 from "@/assets/images/telemed-img1.webp";
 import bgEllipse from "@/assets/images/bg-ellipse.webp";
 import telemedImg2 from "@/assets/images/telemed-img2.webp";
+import doctorProfilePicture from "@/assets/images/doctor-profile-picture.png";
 
 export const images = {
   heroBg,
@@ -46,4 +47,5 @@ export const images = {
   telemedImg1,
   bgEllipse,
   telemedImg2,
+  doctorProfilePicture,
 };
