@@ -136,5 +136,10 @@
 }
 
 .card-shadow {
-  box-shadow: 0 0 20px var(--primary);
+  /* box-shadow: 0 0 20px var(--primary); */
+  box-shadow: 1px 1px 62.6px 17px rgba(22, 42, 255, 0.4);
+}
+
+.doctor-card-shadow {
+  box-shadow: 5.75px 4.312px 14.949px 12.218px rgba(0, 0, 0, 0.03);
 }

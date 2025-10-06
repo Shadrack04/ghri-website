@@ -5,7 +5,7 @@ import { images } from "@/constants/image";
 
 export default function DoctorCard() {
   return (
-    <Card className=" flex-row w-[16rem] gap-3 py-2 justify-center">
+    <Card className=" flex-row w-[16rem] gap-3 py-2 justify-center doctor-card-shadow border-0">
       <Image
         src={images.doctorProfilePicture}
         alt=""
