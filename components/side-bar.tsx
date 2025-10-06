@@ -55,7 +55,7 @@ export function SideBar() {
             About us
           </Link>
 
-          <Accordion type="single" collapsible className="">
+          {/* <Accordion type="single" collapsible className="">
             <AccordionItem value="services" className="">
               <AccordionTrigger className=" py-0 flex-none font-bold text-[100%]">
                 Services
@@ -71,9 +71,9 @@ export function SideBar() {
                 </div>
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
+          </Accordion> */}
 
-          <Accordion type="single" collapsible className="">
+          {/* <Accordion type="single" collapsible className="">
             <AccordionItem value="emergency">
               <AccordionTrigger className=" py-0 flex-none font-bold text-[100%]">
                 Emergency
@@ -101,15 +101,15 @@ export function SideBar() {
                 </div>
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
+          </Accordion> */}
 
-          <Link
+          {/* <Link
             href="#"
             onClick={handleLinkClick}
             className=" text-[100%] font-bold"
           >
             Get Involve
-          </Link>
+          </Link> */}
 
           <Link
             href={paths.public.telemed}
@@ -119,7 +119,7 @@ export function SideBar() {
             Telemed
           </Link>
 
-          <Accordion type="single" collapsible className="">
+          {/* <Accordion type="single" collapsible className="">
             <AccordionItem value="more">
               <AccordionTrigger className=" py-0 flex-none font-bold text-[100%]">
                 More
@@ -135,10 +135,10 @@ export function SideBar() {
                 </div>
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
+          </Accordion> */}
         </div>
         <SheetFooter>
-          <Button type="button">Contact us</Button>
+          <Button type="button">Get started</Button>
         </SheetFooter>
       </SheetContent>
     </Sheet>

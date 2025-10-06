@@ -11,7 +11,7 @@ export default function AppNav() {
       <Logo />
       <div className="hidden w-[80%] md:flex items-center justify-end">
         <Navigation />
-        <Button className=" px-6 py-6 font-bold text-md">Get Started</Button>
+        <Button className=" px-6 py-6 font-bold text-md">Get started</Button>
       </div>
       <SideBar />
     </header>
