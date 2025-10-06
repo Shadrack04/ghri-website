@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 export default function TelemedStep3() {
   return (
     <div className=" custom-padding flex items-center justify-between gap-8">
-      <div className=" grid grid-cols-2 gap-8">
+      <div className=" hidden md:grid grid-cols-2 gap-8">
         <DoctorCard />
         <DoctorCard />
         <DoctorCard />

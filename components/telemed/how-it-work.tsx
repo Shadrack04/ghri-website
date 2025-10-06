@@ -6,7 +6,7 @@ import TelemedStep2 from "./telemed-step-2";
 
 export default function HowItWork() {
   return (
-    <div className=" custom-padding relative py-16 flex flex-col gap-30">
+    <div className=" custom-padding relative py-16 flex flex-col gap-30 overflow-hidden">
       <div className=" w-full flex flex-col items-center justify-center gap-4 mb-22">
         <h2 className=" text-4xl text-foreground font-medium">How it Works!</h2>
         <p className=" text-xl text-center text-foreground md:w-[36rem]">
