@@ -69,14 +69,14 @@ export default function UserSetup() {
   };
 
   return (
-    <Card className=" absolute bg-background md:top-1/2 md:left-1/2 md:-translate-1/2 md:w-full md:max-w-6xl z-30">
-      <CardHeader className=" gap-6 ">
+    <Card className=" absolute bg-background top-10 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-1/2 w-[90%] md:w-full md:max-w-6xl z-30 gap-0 md:gap-6">
+      <CardHeader className=" md:gap-6 ">
         <CardTitle className=" text-center text-4xl">
           Information Form
         </CardTitle>
       </CardHeader>
       <CardContent className=" flex flex-col md:flex-row md:gap-8">
-        <div className="md:bg-[#727EFF1A] flex items-center justify-between h-auto md:block w-full rounded-[18px] p-8 md:w-[40%]">
+        <div className="md:bg-[#727EFF1A] flex items-center justify-between md:block w-full rounded-[18px] p-8 md:w-[40%]">
           {progressState.map((item, index) => (
             <div
               key={index}

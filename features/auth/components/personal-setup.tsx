@@ -47,7 +47,7 @@ export default function PersonalSetup({ form }: Props) {
           )}
         />
 
-        <div className=" grid grid-cols-2 gap-8">
+        <div className=" grid md:grid-cols-2 gap-8">
           <FormField
             control={form.control}
             name="phone"
