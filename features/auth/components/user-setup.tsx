@@ -26,7 +26,7 @@ const progressState = [
 ];
 
 export default function UserSetup() {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(2);
   const form = useForm({
     resolver: zodResolver(userSetupFormSchema),
   });
