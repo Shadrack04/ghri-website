@@ -6,10 +6,10 @@ import UserSetup from "./user-setup";
 
 export default function SignupScreen() {
   return (
-    <div className=" relative  aspect-video w-full">
-      <Image src={images.signupBg} alt="" fill className=" " />
-      {/* <AuthForm type="register" /> */}
-      <UserSetup />
+    <div className=" relative w-full">
+      <Image src={images.signupBg} alt="" className=" " />
+      <AuthForm type="register" />
+      {/* <UserSetup /> */}
     </div>
   );
 }

@@ -14,7 +14,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export function ConfirmationModal() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       {/* <DialogTrigger asChild>

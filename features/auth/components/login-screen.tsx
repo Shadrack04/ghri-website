@@ -5,8 +5,8 @@ import { images } from "@/constants/image";
 
 export default function LoginScreen() {
   return (
-    <div className=" relative  aspect-video w-full">
-      <Image src={images.loginBg} alt="" fill className=" " />
+    <div className=" relative w-full">
+      <Image src={images.loginBg} alt="" className=" " />
       <AuthForm type="login" />
     </div>
   );

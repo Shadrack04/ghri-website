@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -11,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+
 import { icons } from "@/constants/icons";
 import Image from "next/image";
 
@@ -46,13 +45,13 @@ type AuthFormProps = {
 export default function AuthForm({ type, onSubmit }: AuthFormProps) {
   const form = useForm();
   return (
-    <Card className=" absolute bg-background top-1/2 right-8 -translate-y-1/2 w-full max-w-lg z-30">
+    <Card className=" absolute bg-background right-1/2 translate-x-1/2 md:translate-x-0 top-1/2 md:right-8 md:-translate-y-1/2 w-[90%] md:w-full md:max-w-lg z-30">
       <CardHeader className=" gap-6 ">
         <CardTitle className=" text-center text-4xl">
           {type === "register" ? "Create Account" : "Login"}
         </CardTitle>
         <CardDescription className=" flex flex-col px-0 items-center gap-4">
-          <div className=" flex justify-between w-full">
+          <div className=" flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between w-full">
             <Button variant={"outline"} className=" py-6">
               <Image src={icons.authGoogleIcon} alt="" className=" size-6" />
               Sign up with Google
@@ -62,6 +61,7 @@ export default function AuthForm({ type, onSubmit }: AuthFormProps) {
               Sign up with Facebook
             </Button>
           </div>
+
           <h1 className=" text-foreground text-xl">OR</h1>
         </CardDescription>
       </CardHeader>
@@ -109,7 +109,11 @@ export default function AuthForm({ type, onSubmit }: AuthFormProps) {
                 <p className=" text-lg text-muted">
                   what are you registering as
                 </p>
-                <CustomRadioInput radioArray={registerRadioData} />
+                <CustomRadioInput
+                  name="registeringAs"
+                  control={form.control}
+                  radioArray={registerRadioData}
+                />
               </div>
             )}
 
