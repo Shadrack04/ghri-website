@@ -4,6 +4,8 @@ import { Button } from "./ui/button";
 
 import Navigation from "./navigation-menu";
 import { SideBar } from "./side-bar";
+import Link from "next/link";
+import { paths } from "@/constants/paths";
 
 export default function AppNav() {
   return (
@@ -11,7 +13,9 @@ export default function AppNav() {
       <Logo />
       <div className="hidden w-[80%] md:flex items-center justify-end">
         <Navigation />
-        <Button className=" px-6 py-6 font-bold text-md">Get started</Button>
+        <Button className=" px-6 py-6 font-bold text-md" asChild>
+          <Link href={paths.auth.signup}>Get started</Link>
+        </Button>
       </div>
       <SideBar />
     </header>

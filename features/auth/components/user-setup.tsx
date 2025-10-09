@@ -69,7 +69,7 @@ export default function UserSetup() {
   };
 
   return (
-    <Card className=" absolute bg-background top-10 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-1/2 w-[90%] md:w-full md:max-w-6xl z-30 gap-0 md:gap-6">
+    <Card className=" absolute bg-background top-10 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-1/2 w-[90%] md:w-full md:max-w-5xl z-30 gap-0 md:gap-6">
       <CardHeader className=" md:gap-6 ">
         <CardTitle className=" text-center text-4xl">
           Information Form

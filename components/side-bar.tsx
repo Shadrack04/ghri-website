@@ -138,7 +138,9 @@ export function SideBar() {
           </Accordion> */}
         </div>
         <SheetFooter>
-          <Button type="button">Get started</Button>
+          <Button type="button" asChild>
+            <Link href={paths.auth.signup}>Get started</Link>
+          </Button>
         </SheetFooter>
       </SheetContent>
     </Sheet>
