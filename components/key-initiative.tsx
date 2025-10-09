@@ -38,7 +38,7 @@ export default function KeyInitiatives() {
           <br className="hidden md:block" /> actually impact
         </p>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-8 md:gap-28">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 lg:gap-28">
         {data?.map((item) => (
           <InitiativeCard key={item.title} item={item} />
         ))}
