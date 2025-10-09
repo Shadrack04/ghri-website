@@ -8,8 +8,8 @@ export default function SignupScreen() {
   return (
     <div className=" relative w-full">
       <Image src={images.signupBg} alt="" className=" " />
-      <AuthForm type="register" />
-      {/* <UserSetup /> */}
+      {/* <AuthForm type="register" /> */}
+      <UserSetup />
     </div>
   );
 }

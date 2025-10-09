@@ -69,14 +69,14 @@ export default function UserSetup() {
   };
 
   return (
-    <Card className=" absolute bg-background top-1/2 left-1/2 -translate-1/2 w-full max-w-6xl z-30">
+    <Card className=" absolute bg-background md:top-1/2 md:left-1/2 md:-translate-1/2 md:w-full md:max-w-6xl z-30">
       <CardHeader className=" gap-6 ">
         <CardTitle className=" text-center text-4xl">
           Information Form
         </CardTitle>
       </CardHeader>
-      <CardContent className=" flex gap-8">
-        <div className="bg-[#727EFF1A] rounded-[18px] p-8 w-[40%]">
+      <CardContent className=" flex flex-col md:flex-row md:gap-8">
+        <div className="md:bg-[#727EFF1A] flex items-center justify-between h-auto md:block w-full rounded-[18px] p-8 md:w-[40%]">
           {progressState.map((item, index) => (
             <div
               key={index}
@@ -92,7 +92,7 @@ export default function UserSetup() {
               <p
                 className={` ${
                   currentStep >= index + 1 ? " text-primary" : ""
-                } text-xl `}
+                } text-xl hidden md:flex `}
               >
                 {item.name}
               </p>
