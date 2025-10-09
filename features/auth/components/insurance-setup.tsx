@@ -17,7 +17,7 @@ type Props = {
 export default function InsuranceSetup({ form }: Props) {
   return (
     <div className=" w-full">
-      <div className=" grid grid-cols-2 gap-8 mb-8">
+      <div className=" grid md:grid-cols-2 gap-8 mb-8">
         <FormField
           control={form.control}
           name="insuranceProvider"
