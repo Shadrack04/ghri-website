@@ -13,7 +13,7 @@ export default function GlobalHealth() {
       <div className=" flex flex-col-reverse md:flex-row gap-4 items-center">
         <Image src={images.aboutHelp} alt="" className=" flex-1" />
 
-        <div className="mb-8 flex w-full flex-col justify-center px-2 md:mb-0 md:px-12 flex-1">
+        <div className=" custom-padding mb-8 flex w-full flex-col justify-center px-2 md:mb-0 md:px-12 flex-1">
           <h2 className="text-primary mb-6 text-3xl md:text-4xl/snug w-[30rem]">
             Welcome to Global Health Reform Initiatives
           </h2>
