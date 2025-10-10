@@ -5,12 +5,12 @@ import { siteConfig } from "@/constants/site";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import FooterList from "./footer-list";
 
-export const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="w-full bg-background md:px-16">
+    <footer className="w-full bg-background px-4 md:px-2 lg:px-18">
       {/* Top Links */}
       <div className=" py-4">
-        <div className="container mx-auto flex h-full flex-wrap justify-center px-4 py-6 sm:py-6">
+        <div className=" w-full  flex h-full flex-wrap justify-center px-4 py-6 sm:py-6">
           <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 md:gap-0">
             <div>
               <div className="mb-4 flex items-center gap-2">
@@ -88,7 +88,7 @@ export const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 // ;<div className="container mx-auto flex flex-col items-center justify-center py-6">
 //   <nav className="flex flex-wrap items-center justify-center gap-8 text-sm text-white">

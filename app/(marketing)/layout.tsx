@@ -1,5 +1,5 @@
 import AppNav from "@/components/app-nav";
-import { Footer } from "@/components/footer";
+import Footer from "@/components/footer";
 import React from "react";
 
 export default function layout({ children }: { children: React.ReactNode }) {

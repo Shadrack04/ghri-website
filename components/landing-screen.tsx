@@ -9,8 +9,8 @@ import BannerCarousel from "./banner-carousel";
 export default function LandingScreen() {
   return (
     <div>
-      <BannerCarousel />
-      {/* <Banner /> */}
+      {/* <BannerCarousel /> */}
+      <Banner />
       <GlobalHealth />
       <KeyInitiatives />
       <GetInvolved />
