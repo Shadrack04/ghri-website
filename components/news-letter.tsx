@@ -7,7 +7,7 @@ import { icons } from "@/constants/icons";
 
 export default function NewsLetter() {
   return (
-    <div className=" custom-padding bg-[#C9E6FE] my-[3rem] flex flex-col md:flex-row justify-between gap-4 md:gap-0 items-center py-[3.2rem]">
+    <div className=" custom-padding bg-[#C9E6FE] my-[3rem] flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items-center py-[3.2rem]">
       <div className=" flex flex-col gap-4">
         <h3 className=" font-[650] text-center md:text-left text-4xl text-foreground ">
           Join our Newsletter
