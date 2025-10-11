@@ -6,8 +6,8 @@ import TelemedStep2 from "./telemed-step-2";
 
 export default function HowItWork() {
   return (
-    <div className=" custom-padding relative py-16 flex flex-col gap-30 overflow-hidden">
-      <div className=" w-full flex flex-col items-center justify-center gap-4 mb-22">
+    <div className=" custom-padding relative py-16 flex flex-col gap-10 lg:gap-30 overflow-hidden">
+      <div className=" w-full flex flex-col items-center justify-center gap-4 mb-10 lg:mb-22">
         <h2 className=" text-4xl text-foreground font-medium">How it Works!</h2>
         <p className=" text-xl text-center text-foreground md:w-[36rem]">
           Discover, book and experience personified healthcare effortlessly with
@@ -19,8 +19,12 @@ export default function HowItWork() {
         alt=""
         className=" absolute -right-25 top-0 object-cover"
       />
-      <div className=" flex flex-col-reverse md:flex-row items-center gap-12 md:gap-0 md:justify-between">
-        <Image src={images.telemedImg2} alt="" className=" md:w-[50%]" />
+      <div className=" flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-0 md:justify-between">
+        <Image
+          src={images.telemedImg2}
+          alt=""
+          className=" md:w-[80%] lg:w-[50%]"
+        />
         <div className=" flex flex-col gap-6">
           <div className=" flex items-center gap-4">
             <div className=" size-8 flex items-center justify-center text-xl font-bold rounded-full bg-primary text-background">
