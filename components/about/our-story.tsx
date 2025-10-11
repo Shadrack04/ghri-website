@@ -10,7 +10,7 @@ export default function OurStory() {
         alt=""
         className=" order-2 md:order-1"
       />
-      <div className=" order-1 md:order-2 flex flex-col gap-8">
+      <div className=" px-4 md:px-0 md:w-[26rem] lg:w-auto order-1 md:order-2 flex flex-col gap-8">
         <h2 className=" text-4xl text-foreground">Our Story</h2>
         <p className=" lg:w-[31rem] text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas
