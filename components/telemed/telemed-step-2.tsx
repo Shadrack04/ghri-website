@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 export default function TelemedStep2() {
   return (
     <div>
-      <div className=" flex flex-col md:flex-row items-center gap-12 md:gap-0 md:justify-between">
+      <div className=" flex flex-col lg:flex-row items-center gap-12 lg:gap-0 md:justify-between">
         <div className=" flex flex-col gap-6">
           <div className=" flex items-center gap-4">
             <div className=" size-8 flex items-center justify-center text-xl font-bold rounded-full bg-primary text-background">
@@ -29,7 +29,11 @@ export default function TelemedStep2() {
             </div>
           </div>
         </div>
-        <Image src={images.aboutHelp} alt="" className=" md:w-[50%]" />
+        <Image
+          src={images.aboutHelp}
+          alt=""
+          className=" md:w-[80%] lg::w-[50%]"
+        />
       </div>
     </div>
   );
