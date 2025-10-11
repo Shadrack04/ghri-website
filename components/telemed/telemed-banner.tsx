@@ -30,7 +30,7 @@ export default function TelemedBanner() {
           className=" md:w-[80%]"
         />
       </div>
-      <div className=" md:w-[70%] mx-auto md:-mt-10 flex flex-col md:flex-row items-center">
+      <div className=" lg:w-[70%] mx-auto md:mt-8 lg:-mt-10 flex flex-col md:flex-row items-center">
         <TelemedCard
           icon={icons.ambulanceIcon}
           title="Emergency Care"
