@@ -28,7 +28,7 @@ export default function NewsLetter() {
       </div>
 
       <Image
-        className="absolute left-[44.5%] rotate-y-180 md:rotate-y-0 bottom-[13%] object-cover"
+        className="hidden lg:flex absolute left-[44.5%] rotate-y-180 md:rotate-y-0 bottom-[13%] object-cover"
         src={icons.kiteIcon}
         width={170}
         height={170}
@@ -37,7 +37,7 @@ export default function NewsLetter() {
       <Image
         src={icons.dottedLine}
         alt=""
-        className="hidden md:flex absolute left-105 bottom-5.5 "
+        className="hidden lg:flex absolute left-105 bottom-5.5 "
       />
     </div>
   );
