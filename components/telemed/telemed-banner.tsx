@@ -58,7 +58,7 @@ export default function TelemedBanner() {
       <Image
         src={icons.telemedEllipse}
         alt=""
-        className=" absolute bottom-0 -left-16 md:left-16 size-28"
+        className=" absolute bottom-0 -left-16 lg:left-16 size-28"
       />
     </div>
   );

@@ -35,7 +35,7 @@ export default function HowItWork() {
             </h3>
           </div>
           <div className=" flex flex-col gap-6">
-            <p className=" text-xl md:w-[30rem]">
+            <p className=" text-xl md:w-[40rem] lg:w-[30rem]">
               Good Health is mental, physical and social wellbeing, not just the
               absence of diseases. It includes strong connection and quick
               access to support

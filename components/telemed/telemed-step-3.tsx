@@ -4,8 +4,8 @@ import { Button } from "../ui/button";
 
 export default function TelemedStep3() {
   return (
-    <div className=" custom-padding flex items-center justify-between gap-8">
-      <div className=" hidden md:grid grid-cols-2 gap-8">
+    <div className=" custom-padding flex items-center md:justify-center lg:justify-between gap-8">
+      <div className=" hidden lg:grid grid-cols-2 gap-8">
         <DoctorCard />
         <DoctorCard />
         <DoctorCard />
@@ -15,7 +15,7 @@ export default function TelemedStep3() {
       <div className=" flex flex-col gap-6">
         <div className=" flex items-center gap-4">
           <div className=" size-8 flex items-center justify-center text-xl font-bold rounded-full bg-primary text-background">
-            1
+            3
           </div>
           <h3 className=" text-4xl text-foreground leading-12 font-medium w-[22rem] ">
             Get the best
